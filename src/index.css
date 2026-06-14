@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-navy-900: #060d1b;
+  --color-navy-800: #0a1324;
+  --color-navy-700: #0f1c35;
+  --color-navy-600: #142546;
+
+  --color-gold-500: #D4AF37;
+  --color-gold-400: #dfc059;
+  --color-gold-600: #aa8926;
+
+  --color-surface-dark: rgba(255, 255, 255, 0.03);
+  --color-surface-border: rgba(212, 175, 55, 0.2);
+}
+
+@layer base {
+  body {
+    @apply bg-navy-900 text-white font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.clip-diagonal {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-gold-400 to-gold-600;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "New Soldier City",
+  "description": "Premium real estate website for New Soldier City - A Wish Full of Desire",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
